@@ -112,3 +112,7 @@ plt.xlabel('epochs')
 plt.ylabel('loss')
 plt.grid()
 plt.show()
+
+
+
+

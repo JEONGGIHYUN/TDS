@@ -2,8 +2,7 @@ import numpy as np
 from tensorflow.keras.models import Sequential
 from tensorflow.keras.layers import Dense
 from sklearn.model_selection import train_test_split
-
-
+from matplotlib import pyplot as plt # matplotlib에서 plot을 plt로 가져오기
 #1. 데이터
 x = np.array([1,2,3,4,5,6,7,8,9,10])
 y = np.array([1,2,3,4,7,5,7,8,6,10])
@@ -36,6 +35,7 @@ results = model.predict(x)
 print('로스 :', loss)
 print('11의 예측값 :', results)
 
+# matplotlib.pyplot을 plt로 가져오기
 import matplotlib.pyplot as plt #데이터의 y=wx + b 의 선을 그어줄때 필요한 데이터 값을 가져오는 함수
 plt.scatter(x, y)
 plt.plot(x, results, color='red') #데이터가 이어진 선을 그어준다.
